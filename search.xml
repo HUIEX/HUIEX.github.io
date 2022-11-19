@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>123</title>
+    <url>/2022/11/18/123/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo</title>
+    <url>/2022/01/23/Hexo/</url>
+    <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
+<p>更加关于Hexo详细的可以参考<a href="https://dhndzwxj-3ghxc51j1010c2ed-1302940033.tcloudbaseapp.com/3276806131.html">新建标签页 (tcloudbaseapp.com)</a></p>
+<p><code>hexo n &quot;我的博客&quot;</code> == <code>hexo new &quot;我的博客&quot;</code> #新建文章<br><code>hexo p</code> == <code>hexo publish</code><br><code>hexo g</code> == <code>hexo generate</code>#生成静态网页<br><code>hexo s</code> == <code>hexo server</code> #启动服务预览<br><code>hexo d</code> == <code>hexo deploy</code>#开始部署</p>
+<p><strong>hexo g 操作会在 /Blog下产生一个public文件，而 hexo clear 后 该public文件就会消失</strong></p>
+<p><strong>/Blog/deploy_git 目录下的文件 就是github仓库的文件，可以在该目录下 git bash 进行添加文件</strong></p>
+<h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p><strong>安装主题</strong></p>
+<p>更换主题可参考<a href="https://zhuanlan.zhihu.com/p/385525053">hexo博客换主题 - 知乎 (zhihu.com)</a></p>
+<p>实际更换主题时可根据 主题官方 的提示要求下进行操作</p>
+<p><a href="https://gitee.com/immyw/hexo-theme-butterfly?_from=gitee_search">https://gitee.com/immyw/hexo-theme-butterfly?_from=gitee_search</a></p>
+<p><strong>美化主题</strong></p>
+<p>根据 主题官方文档进行操作</p>
+<p><a href="https://butterfly.js.org/posts/4aa8abbe/#%E9%A0%82%E9%83%A8%E5%9C%96">Butterfly 安裝文檔(三) 主題配置-1 | Butterfly</a></p>
+<p><strong>添加图片</strong></p>
+<p>如果想要在仓库中上传照片，想要现在 /Blog 目录下的 source 文件夹中 创建一个文件</p>
+<p>然后将照片放入文件夹中，然后同步到github中</p>
+<p>同步方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;这里面随便填&quot;</span></span><br><span class="line">git push    </span><br></pre></td></tr></table></figure>
+
+<p>也可以直接在github中添加新文件  进行同步</p>
+<p>之后想要添加的文件或者图片就能上传到github上的仓库上了</p>
+<h1 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h1><p>可根据<a href="https://zhuanlan.zhihu.com/p/132823826">使用hexo新建、编辑并预览文章 - 知乎 (zhihu.com)</a></p>
+<p>主要操作是</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo n <span class="string">&quot;文件名&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>然后在 /Blog/source/_posts会产生同名的 .md 文件，再里面写博客即可，其中上面的<strong>Front-matter</strong> 可以根据 上面<strong>更换主题</strong> 的内容进行操作</p>
+<p>然后就 hexo三连</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="博客图片显示问题"><a href="#博客图片显示问题" class="headerlink" title="博客图片显示问题"></a>博客图片显示问题</h1><p>打开博客所在文件夹 blog，找到<code>_config.yml</code>文件，修改<code>post_asset_folder: true</code></p>
+<p>git bash安装插件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">npm install https:<span class="comment">//github.com/7ym0n/hexo-asset-image --save</span></span><br></pre></td></tr></table></figure>
+
+<p>安装前可以先换源</p>
+<p>之后新建博客时，<code>Hexo</code>会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用</p>
+<p><img src="/2022/01/23/Hexo/123.png" alt="tu"></p>
+<p>插入图片使用方式：</p>
+<ol>
+<li><code>&#123;% asset_img 3.png %&#125;    3.png为图片名</code></li>
+<li><code>![这里写图片描述](./文件夹名/图片名)</code></li>
+</ol>
+<h1 id="无法上传github问题"><a href="#无法上传github问题" class="headerlink" title="无法上传github问题"></a>无法上传github问题</h1><blockquote>
+<p>端口问题</p>
+</blockquote>
+<p>由于睿智校园网 无妨访问22端口号，上传就开热点吧</p>
+<p>不想想端口了（主要是没改成），反正上传文章偶尔定时统一上传到github上就可以了</p>
+<p>也可以更改SHH的端口号</p>
+<p><a href="https://www.jianshu.com/p/c3aac5024877">https://www.jianshu.com/p/c3aac5024877</a></p>
+<blockquote>
+<p>访问权限问题</p>
+</blockquote>
+<p><code>but GitHub does not provide shell access</code></p>
+<p><a href="https://www.cnblogs.com/xsilence/p/6001938.html">针对github权限导致hexo部署失败的解决方案 - silencetea - 博客园 (cnblogs.com)</a></p>
+<h1 id="npm换源"><a href="#npm换源" class="headerlink" title="npm换源"></a>npm换源</h1><p>.先清除缓存</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+
+<p>安装淘宝镜像<strong>cnpm</strong>，用<strong>cnpm</strong>来安装依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>之后就用cnpm代替npm</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二叉树</title>
+    <url>/2022/11/18/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<p><strong>112. 路径总和</strong></p>
+<p><a href="https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest">https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest</a></p>
+<p>注意题目要求的叶子节点，一般有这种条件的都需要判断左右节点为空。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasPathSum</span><span class="params">(TreeNode root, <span class="keyword">int</span> targetSum)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        targetSum -= root.val;</span><br><span class="line">        <span class="keyword">if</span>(targetSum == <span class="number">0</span> &amp;&amp; root.left == <span class="keyword">null</span> &amp;&amp; root.right == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">return</span> hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>算法</tag>
+        <tag>二叉树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>服务器更改ssh端口号</title>
+    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
+    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
+
+
+
+<p><strong>修改firewall配置</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重载防火墙</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启ssh服务</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>在阿里云上添加安全组</strong></p>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
+
+<p><strong>结束</strong></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+</search>
