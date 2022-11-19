@@ -100,19 +100,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深度搜索</title>
-    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>DFS</category>
-        <category>代码随想录</category>
-      </categories>
-      <tags>
-        <tag>DFS</tag>
-        <tag>代码随想录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>服务器更改ssh端口号</title>
     <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
     <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
@@ -150,17 +137,16 @@
       </tags>
   </entry>
   <entry>
-    <title>二叉树</title>
-    <url>/2022/11/18/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<p><strong>112. 路径总和</strong></p>
-<p><a href="https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest">https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest</a></p>
-<p>注意题目要求的叶子节点，一般有这种条件的都需要判断左右节点为空。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasPathSum</span><span class="params">(TreeNode root, <span class="keyword">int</span> targetSum)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        targetSum -= root.val;</span><br><span class="line">        <span class="keyword">if</span>(targetSum == <span class="number">0</span> &amp;&amp; root.left == <span class="keyword">null</span> &amp;&amp; root.right == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">return</span> hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
+    <title>深度搜索</title>
+    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>DFS</category>
+        <category>代码随想录</category>
+      </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>二叉树</tag>
+        <tag>DFS</tag>
+        <tag>代码随想录</tag>
       </tags>
   </entry>
 </search>
