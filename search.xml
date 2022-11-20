@@ -131,6 +131,8 @@
 <h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654. 最大二叉树"></a>654. 最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a><br>和上一题类似<br>根据区间，L、R 遍历找出最大值的数组下标<br>然后再根据下标进行 分割区间</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dfs(nums, <span class="number">0</span>, nums.length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">dfs</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> L, <span class="keyword">int</span> R)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(L &gt; R) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> idx = L;</span><br><span class="line">        <span class="keyword">int</span> max = nums[L];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = L+<span class="number">1</span>; i &lt;= R; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] &gt; max) &#123;</span><br><span class="line">                max = nums[i];</span><br><span class="line">                idx = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        TreeNode root = <span class="keyword">new</span> TreeNode(nums[idx]);</span><br><span class="line"></span><br><span class="line">        root.left = dfs(nums, L, idx - <span class="number">1</span>);</span><br><span class="line">        root.right = dfs(nums, idx + <span class="number">1</span>, R);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>时间复杂度：O(n^2)，n 是数组 的长度。<br>在最坏的情况下，数组严格递增或递减，需要递归n层，第 i层需要遍历 <code>n−i</code> 个元素以找出最大值，总时间复杂度为 <code>O(n^2)</code></p>
+<h2 id="617-合并二叉树"><a href="#617-合并二叉树" class="headerlink" title="617. 合并二叉树"></a>617. 合并二叉树</h2><p><a href="https://leetcode.cn/problems/merge-two-binary-trees/description/">https://leetcode.cn/problems/merge-two-binary-trees/description/</a><br>当一个节点为空时，直接返回另一个节点就可以了，并终止当前子树的深搜</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">mergeTrees</span><span class="params">(TreeNode root1, TreeNode root2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root2 == <span class="keyword">null</span>) <span class="keyword">return</span> root1;</span><br><span class="line">        <span class="keyword">if</span>(root1 == <span class="keyword">null</span>) <span class="keyword">return</span> root2;</span><br><span class="line"></span><br><span class="line">        root1.val = root1.val + root2.val;</span><br><span class="line">        root1.left = mergeTrees(root1.left, root2.left);</span><br><span class="line">        root1.right = mergeTrees(root1.right, root2.right);</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">return</span> root1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>代码随想录</category>
@@ -139,98 +141,6 @@
       <tags>
         <tag>算法</tag>
         <tag>二叉树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>服务器更改ssh端口号</title>
-    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
-    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
-
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
-
-
-
-<p><strong>修改firewall配置</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重载防火墙</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重启ssh服务</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>在阿里云上添加安全组</strong></p>
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
-
-<p><strong>结束</strong></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度搜索</title>
-    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>DFS</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>DFS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>栈</title>
-    <url>/2022/11/19/%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>栈</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>栈</tag>
       </tags>
   </entry>
   <entry>
@@ -276,7 +186,7 @@
 
 
 
-<h2 id="集合通用方法"><a href="#集合通用方法" class="headerlink" title="==集合通用方法=="></a>==集合通用方法==</h2><p>==向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要 重写equals().==</p>
+<h2 id="集合通用方法"><a href="#集合通用方法" class="headerlink" title="集合通用方法"></a>集合通用方法</h2><p>==向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要 重写equals().==</p>
 <p>存储有序的、可重复的数据</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">   	Collection arrayList = <span class="keyword">new</span> ArrayList();</span><br><span class="line">   	arrayList.add(<span class="number">123</span>);<span class="comment">//int</span></span><br><span class="line">   	arrayList.add(<span class="keyword">new</span> String(<span class="string">&quot;Huiex&quot;</span>));<span class="comment">//String</span></span><br><span class="line">   	arrayList.add(<span class="keyword">false</span>);<span class="comment">//布尔</span></span><br><span class="line">   	arrayList.add(<span class="keyword">new</span> Person(<span class="string">&quot;胖子君&quot;</span>,<span class="number">19</span>));<span class="comment">//对象</span></span><br></pre></td></tr></table></figure>
 
@@ -316,7 +226,7 @@
 
 
 
-<h2 id="Collections工具类"><a href="#Collections工具类" class="headerlink" title="==Collections工具类=="></a>==Collections工具类==</h2><p>Collections是一个操作Set、List 和Map等集合的工具类</p>
+<h2 id="Collections工具类"><a href="#Collections工具类" class="headerlink" title="Collections工具类"></a>Collections工具类</h2><p>Collections是一个操作Set、List 和Map等集合的工具类</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Collections中提供了一系列静态的方法对集合元素进行排序、查询和修改等操作，</span><br><span class="line">还提供了对集合对象设置不可变、对集合对象实现同步控制等方法</span><br></pre></td></tr></table></figure>
 
 
@@ -351,7 +261,7 @@
 
 
 
-<h2 id="集合和数组转化"><a href="#集合和数组转化" class="headerlink" title="==集合和数组转化=="></a>==集合和数组转化==</h2><h3 id="将集合转化为数组"><a href="#将集合转化为数组" class="headerlink" title="将集合转化为数组"></a>将集合转化为数组</h3><p>调用Arrays.类的静态方法toArray <strong>该方法只支持包装类，无法转化为int型</strong></p>
+<h2 id="集合和数组转化"><a href="#集合和数组转化" class="headerlink" title="集合和数组转化"></a>集合和数组转化</h2><h3 id="将集合转化为数组"><a href="#将集合转化为数组" class="headerlink" title="将集合转化为数组"></a>将集合转化为数组</h3><p>调用Arrays.类的静态方法toArray <strong>该方法只支持包装类，无法转化为int型</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">    list.add(<span class="string">&quot;A&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;B&quot;</span>);</span><br><span class="line">    list.add(<span class="string">&quot;C&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用泛型，无需显式类型转换</span></span><br><span class="line">    String[] array = list.toArray(<span class="keyword">new</span> String[list.size()]);</span><br><span class="line">    System.out.println(array[<span class="number">0</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>使用循环</p>
@@ -1145,6 +1055,98 @@
       </categories>
       <tags>
         <tag>易点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>服务器更改ssh端口号</title>
+    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
+    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
+
+
+
+<p><strong>修改firewall配置</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重载防火墙</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启ssh服务</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>在阿里云上添加安全组</strong></p>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
+
+<p><strong>结束</strong></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>栈</title>
+    <url>/2022/11/19/%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>栈</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>栈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度搜索</title>
+    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>DFS</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>DFS</tag>
       </tags>
   </entry>
 </search>
