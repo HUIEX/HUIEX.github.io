@@ -71,9 +71,46 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>二叉树</title>
     <url>/2022/11/18/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<h1 id="叶子节点"><a href="#叶子节点" class="headerlink" title="叶子节点"></a>叶子节点</h1><h2 id="112-路径总和"><a href="#112-路径总和" class="headerlink" title="112.路径总和"></a>112.路径总和</h2><p><a href="https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest">https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest</a></p>
+    <content><![CDATA[<h1 id="深度"><a href="#深度" class="headerlink" title="深度"></a>深度</h1><h2 id="104-二叉树的最大深度"><a href="#104-二叉树的最大深度" class="headerlink" title="104. 二叉树的最大深度"></a>104. 二叉树的最大深度</h2><p><a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/">https://leetcode.cn/problems/maximum-depth-of-binary-tree/</a><br>求深度用前序遍历</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxDepth</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> Math.max(maxDepth(root.left), maxDepth(root.right)) + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="111-二叉树的最小深度"><a href="#111-二叉树的最小深度" class="headerlink" title="111.二叉树的最小深度"></a>111.二叉树的最小深度</h2><p><a href="https://leetcode.cn/problems/minimum-depth-of-binary-tree/description/">https://leetcode.cn/problems/minimum-depth-of-binary-tree/description/</a><br>求高度用后序遍历 </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minDepth</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> l = minDepth(root.left);</span><br><span class="line">        <span class="keyword">int</span> r = minDepth(root.right);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> min = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(root.left != <span class="keyword">null</span> &amp;&amp; root.right != <span class="keyword">null</span>) min = Math.min(l, r);</span><br><span class="line">        <span class="keyword">if</span>(root.left == <span class="keyword">null</span>) min = r;</span><br><span class="line">        <span class="keyword">if</span>(root.right == <span class="keyword">null</span>) min = l;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> min + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="110-平衡二叉树"><a href="#110-平衡二叉树" class="headerlink" title="110. 平衡二叉树"></a>110. 平衡二叉树</h2><p><a href="https://leetcode.cn/problems/balanced-binary-tree/">https://leetcode.cn/problems/balanced-binary-tree/</a></p>
+<p>左子树的高度 和 右子树的高度 相差小于1，如何返回左右最高的深度+1，  否则直接返回 负数</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBalanced</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dfs(root) &gt;= <span class="number">0</span> ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> deepL = dfs(root.left);</span><br><span class="line">        <span class="keyword">int</span> deepR = dfs(root.right);</span><br><span class="line">        <span class="keyword">if</span>(deepL &lt; <span class="number">0</span> || deepR &lt; <span class="number">0</span>) <span class="keyword">return</span> -<span class="number">5</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(Math.abs(deepL - deepR) &gt; <span class="number">1</span>) <span class="keyword">return</span> -<span class="number">5</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> Math.max(deepL, deepR) + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="叶子节点"><a href="#叶子节点" class="headerlink" title="叶子节点"></a>叶子节点</h1><h2 id="112-路径总和"><a href="#112-路径总和" class="headerlink" title="112.路径总和"></a>112.路径总和</h2><p><a href="https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest">https://leetcode.cn/problems/path-sum/description/?orderBy=newest_to_oldest</a></p>
 <p>注意题目要求的叶子节点，一般有这种条件的都需要判断左右节点为空。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasPathSum</span><span class="params">(TreeNode root, <span class="keyword">int</span> targetSum)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        targetSum -= root.val;</span><br><span class="line">        <span class="keyword">if</span>(targetSum == <span class="number">0</span> &amp;&amp; root.left == <span class="keyword">null</span> &amp;&amp; root.right == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">return</span> hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -115,6 +152,11 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    TreeNode pre;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(!isValidBST(root.left)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre != <span class="keyword">null</span> &amp;&amp; root.val &lt;= pre.val)  <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        pre = root;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> isValidBST(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
+<h2 id="530-二叉搜索树的最小绝对差"><a href="#530-二叉搜索树的最小绝对差" class="headerlink" title="530. 二叉搜索树的最小绝对差"></a>530. 二叉搜索树的最小绝对差</h2><p>和上一题一样，利用二叉搜索树的特性，中序遍历，使当前节点进去上个节点，比较差值，最小的就是答案。<br><code>minL</code>左子树最小差值<br><code>min</code> 当前节点和上个节点的差值  与minL 的 最小差值<br><code>minR</code>左子树最小差值</p>
+<p>return minR和min 中的最小值</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pre = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> min = Integer.MAX_VALUE;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getMinimumDifference</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> minL = getMinimumDifference(root.left);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre &gt; -<span class="number">1</span>) min = Math.min((root.val - pre), min);</span><br><span class="line">        pre = root.val;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> minR = getMinimumDifference(root.right);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Math.min(minR, min);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
 
 
 
@@ -146,69 +188,40 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>服务器更改ssh端口号</title>
+    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
+    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>修改firewall配置</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重载防火墙</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启ssh服务</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>在阿里云上添加安全组</strong></p>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
+
+<p><strong>结束</strong></p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>栈</title>
-    <url>/2022/11/19/%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>栈</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>栈</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1126,40 +1139,45 @@
       </tags>
   </entry>
   <entry>
-    <title>服务器更改ssh端口号</title>
-    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
-    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
-
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
+    <title>栈</title>
+    <url>/2022/11/19/%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>修改firewall配置</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>重载防火墙</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>重启ssh服务</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>在阿里云上添加安全组</strong></p>
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
 
-<p><strong>结束</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>代码随想录</category>
+        <category>栈</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>算法</tag>
+        <tag>栈</tag>
       </tags>
   </entry>
   <entry>
