@@ -225,6 +225,61 @@
       </tags>
   </entry>
   <entry>
+    <title>栈</title>
+    <url>/2022/11/19/%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>栈</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>栈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度搜索</title>
+    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>DFS</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>DFS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据结构</title>
     <url>/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h2 id="集合继承体系"><a href="#集合继承体系" class="headerlink" title="集合继承体系"></a>集合继承体系</h2><img src="/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/aHR0cDovL3AxLnBzdGF0cC5jb20vbGFyZ2UvcGdjLWltYWdlLzViZmE3Nzk5N2EyYzQwMmI4MjUzNjEzYzE0ZjJiODky" alt="img" style="zoom:200%;">
@@ -695,7 +750,7 @@
 <li>首次调用put()方法时，底层创建长度为16的数组</li>
 <li>jdk7底层结构只有:数组+链表。jdk8中底层结构:数组+链表+红黑树。<br> 当数组的某- -个索引位置上的元素以链表形式存在的数据个数&gt; 8且当前数组的长度&gt; 64时,<br> 此时此索引位置上的所有数据改为使用红黑树存储。</li>
 </ol>
-<h2 id="方法-6"><a href="#方法-6" class="headerlink" title="==方法=="></a>==方法==</h2><blockquote>
+<h2 id="方法-6"><a href="#方法-6" class="headerlink" title="方法"></a>方法</h2><blockquote>
 <p>添加/修改</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">put(key,value) </span><br><span class="line">		HashMap map = <span class="keyword">new</span> HashMap();</span><br><span class="line">        <span class="comment">//添加</span></span><br><span class="line">        map.put(<span class="string">&quot;AA&quot;</span>,<span class="number">123</span>);</span><br><span class="line">        map.put(<span class="number">456</span>,<span class="number">789</span>);</span><br><span class="line">        <span class="comment">//修改</span></span><br><span class="line">        map.put(<span class="string">&quot;AA&quot;</span>,<span class="number">789</span>);</span><br><span class="line">		System.out.println(map);&#123;AA=<span class="number">789</span>, <span class="number">456</span>=<span class="number">789</span>&#125;</span><br></pre></td></tr></table></figure>
@@ -732,7 +787,7 @@
 <p>遍历</p>
 </blockquote>
 <p>Set keySet(): 返回所有key构成的Set集合</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap map = <span class="keyword">new</span> HashMap();</span><br><span class="line"></span><br><span class="line">       map.put(<span class="string">&quot;AA&quot;</span>,<span class="number">123</span>);</span><br><span class="line">       map.put(<span class="number">456</span>,<span class="number">123</span>);</span><br><span class="line">       map.put(<span class="string">&quot;BB&quot;</span>,<span class="string">&quot;BB&quot;</span>);</span><br><span class="line"></span><br><span class="line">       <span class="comment">//遍历所有的key集: keySet()</span></span><br><span class="line">       Set set = map.keySet();将key存入set中</span><br><span class="line">       Iterator iterator = set.iterator();再遍历<span class="function">set</span></span><br><span class="line"><span class="function">       <span class="title">while</span> <span class="params">(iterator.hasNext()</span>)</span>&#123;</span><br><span class="line">           System.out.println(iterator.next());</span><br><span class="line">       &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">HashMap map = <span class="keyword">new</span> HashMap();</span><br><span class="line"></span><br><span class="line">     map.put(<span class="string">&quot;AA&quot;</span>,<span class="number">123</span>);</span><br><span class="line">     map.put(<span class="number">456</span>,<span class="number">123</span>);</span><br><span class="line">     map.put(<span class="string">&quot;BB&quot;</span>,<span class="string">&quot;BB&quot;</span>);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//遍历所有的key集: keySet()</span></span><br><span class="line">     Set set = map.keySet();将key存入set中</span><br><span class="line">     Iterator iterator = set.iterator();再遍历<span class="function">set</span></span><br><span class="line"><span class="function">     <span class="title">while</span> <span class="params">(iterator.hasNext()</span>)</span>&#123;</span><br><span class="line">         System.out.println(iterator.next());</span><br><span class="line">     &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -743,16 +798,17 @@
 
 <p>Set entrySet(): 返回所有key-value对构成的Set集合</p>
 <p>方法一</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//遍历所有的key-value</span></span><br><span class="line"><span class="comment">//entrySet():</span></span><br><span class="line">Set entrySet = map.entrySet();</span><br><span class="line">Iterator iterator2 = entrySet.iterator();</span><br><span class="line"><span class="keyword">while</span> (iterator2.hasNext())&#123;</span><br><span class="line">    Map.Entry entry = (Map.Entry)iterator2.next();<span class="comment">//强转一下Map.Entry类型</span></span><br><span class="line">    System.out.println(entry.getKey() + <span class="string">&quot;---&gt;&quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//遍历所有的key-value</span></span><br><span class="line"><span class="comment">//entrySet():</span></span><br><span class="line">Map.Entry entrySet = map.entrySet();</span><br><span class="line">Iterator iterator2 = entrySet.iterator();</span><br><span class="line"><span class="keyword">while</span> (iterator2.hasNext())&#123;</span><br><span class="line">    Map.Entry entry = (Map.Entry)iterator2.next();<span class="comment">//强转一下Map.Entry类型</span></span><br><span class="line">    System.out.println(entry.getKey() + <span class="string">&quot;---&gt;&quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>方法二</p>
+<p>返回所有key构成的Set集合,再用key查询 value；</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Set keySet = map.keySet();</span><br><span class="line">     Iterator iterator3 = keySet.iterator();</span><br><span class="line">     <span class="keyword">while</span> (iterator.hasNext())&#123;</span><br><span class="line">         Object key = iterator.next();</span><br><span class="line">         Object value = map.get(key);</span><br><span class="line">         System.out.println(key + <span class="string">&quot;---&gt;&quot;</span> + value);</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
 
 
 
 
 
-<h2 id="根据键、值排序"><a href="#根据键、值排序" class="headerlink" title="==根据键、值排序=="></a>==根据键、值排序==</h2><blockquote>
+<h2 id="根据键、值排序"><a href="#根据键、值排序" class="headerlink" title="根据键、值排序"></a>根据键、值排序</h2><blockquote>
 <p>以Key进行排序</p>
 </blockquote>
 <p>我们可以声明一个TreeMap对象</p>
@@ -797,7 +853,7 @@
 
 <p>因为 str为引用数据类型，传递给形参的是地址</p>
 <p>而char []中的char[0]是char为基本数据类型，传递的是真实存储的数据值，能够被改变</p>
-<h2 id="String类方法"><a href="#String类方法" class="headerlink" title="==String类方法=="></a>==String类方法==</h2><blockquote>
+<h2 id="String类方法"><a href="#String类方法" class="headerlink" title="String类方法"></a>String类方法</h2><blockquote>
 <p>大小写 </p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="function">String <span class="title">toLowerCase</span><span class="params">()</span>：使用默认语言环境，将String中的所有字符转换为小写,不改变原字符串</span></span><br><span class="line"><span class="function">String <span class="title">toUpperCase</span><span class="params">()</span>：使用默认语言环境，将String中的所有字符转换为大写,不改变原字符串</span></span><br></pre></td></tr></table></figure>
@@ -861,7 +917,7 @@
 
 
 
-<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="==类型转换=="></a>==类型转换==</h2><h3 id="int-lt-gt-String"><a href="#int-lt-gt-String" class="headerlink" title="int  &lt;==&gt; String"></a>int  &lt;==&gt; String</h3><blockquote>
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><h3 id="int-lt-gt-String"><a href="#int-lt-gt-String" class="headerlink" title="int  &lt;==&gt; String"></a>int  &lt;==&gt; String</h3><blockquote>
 <p>String –&gt; 基本数据类型、包装类</p>
 </blockquote>
 <p>调用包装类的静态方法：parseXxx(str)</p>
@@ -901,7 +957,7 @@
 
 
 
-<h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="==StringBuffer=="></a>==StringBuffer==</h2><h3 id="异同"><a href="#异同" class="headerlink" title="异同"></a>异同</h3><p>String、StringBuffer、StringBuilder三者的异同？</p>
+<h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><h3 id="异同"><a href="#异同" class="headerlink" title="异同"></a>异同</h3><p>String、StringBuffer、StringBuilder三者的异同？</p>
 <ul>
 <li>String:不可变的字符序列；底层使用char[]存储</li>
 <li>StringBuffer:可变的字符序列；线程安全的，效率低；底层使用char[]存储</li>
@@ -921,7 +977,7 @@
 
 
 
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="==常用方法=="></a>==常用方法==</h3><p>增</p>
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><p>增</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(String xxx)</span>：提供了很多的<span class="title">append</span><span class="params">()</span>方法，用于进行字符串拼接</span></span><br><span class="line"><span class="function">StringBuffer <span class="title">insert</span><span class="params">(<span class="keyword">int</span> offset, xxx)</span>：在指定位置插入xxx</span></span><br></pre></td></tr></table></figure>
 
 <p>删</p>
@@ -939,7 +995,7 @@
 
 
 
-<h3 id="String之间的转化"><a href="#String之间的转化" class="headerlink" title="==String之间的转化=="></a>==String之间的转化==</h3><blockquote>
+<h3 id="String之间的转化"><a href="#String之间的转化" class="headerlink" title="String之间的转化"></a>String之间的转化</h3><blockquote>
 <p>String  —&gt;  StringBuffer</p>
 </blockquote>
 <p><strong>通过构造方法</strong></p>
@@ -1054,7 +1110,7 @@
 <p><strong>Integer到int:</strong></p>
 <p>Integer A=new Integer(5);</p>
 <p>int a=A.intValue();</p>
-<h2 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="==常用方法=="></a>==常用方法==</h2><p><img src="/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20220326203630294.png" alt="image-20220326203630294"></p>
+<h2 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h2><p><img src="/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20220326203630294.png" alt="image-20220326203630294"></p>
 <h2 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h2><p>Integer类的toString()方法，可将Integer对象转换为十进制字符串表示。toBinaryString()、toHexString()和toOctalString()方法分别将值转换成二进制、十六进制和八进制字符串</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Charac</span> </span>&#123; <span class="comment">// 创建类Charac</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123; <span class="comment">// 主方法</span></span><br><span class="line">		String str = Integer.toString(<span class="number">456</span>); <span class="comment">// 获取数字的十进制表示</span></span><br><span class="line">		String str2 = Integer.toBinaryString(<span class="number">456</span>); <span class="comment">// 获取数字的二进制表示</span></span><br><span class="line">		String str3 = Integer.toHexString(<span class="number">456</span>); <span class="comment">// 获取数字的十六进制表示</span></span><br><span class="line">		String str4 = Integer.toOctalString(<span class="number">456</span>); <span class="comment">// 获取数字的八进制表示</span></span><br><span class="line">		System.out.println(<span class="string">&quot;&#x27;456&#x27;的十进制表示为：&quot;</span> + str);</span><br><span class="line">		System.out.println(<span class="string">&quot;&#x27;456&#x27;的二进制表示为：&quot;</span> + str2);</span><br><span class="line">		System.out.println(<span class="string">&quot;&#x27;456&#x27;的十六进制表示为：&quot;</span> + str3);</span><br><span class="line">		System.out.println(<span class="string">&quot;&#x27;456&#x27;的八进制表示为：&quot;</span> + str4);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1136,61 +1192,6 @@
       </categories>
       <tags>
         <tag>易点</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>栈</title>
-    <url>/2022/11/19/%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>栈</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>栈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度搜索</title>
-    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>DFS</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>DFS</tag>
       </tags>
   </entry>
 </search>
