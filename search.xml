@@ -163,17 +163,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<h2 id="501-二叉搜索树中的众数"><a href="#501-二叉搜索树中的众数" class="headerlink" title="501. 二叉搜索树中的众数"></a>501. 二叉搜索树中的众数</h2><p>中序遍历， 将结果存入map中 key为节点值， value为出现次数<br>然后在遍历map 并进行比较处理<br>如果 value大于max 就将栈清空，并将该key存入栈中<br>如果一样，就将key加入栈中<br>最后将结果存入数组中</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    Deque&lt;Integer&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;(); </span><br><span class="line">    <span class="keyword">int</span> maxV = -<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] findMode(TreeNode root) &#123;</span><br><span class="line">        dfs(root);</span><br><span class="line"></span><br><span class="line">        Set entrySet = map.entrySet();</span><br><span class="line">        Iterator iterator =  entrySet.iterator();</span><br><span class="line">        <span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">            Map.Entry entry = (Map.Entry)iterator.next();</span><br><span class="line">            <span class="keyword">int</span> key = (<span class="keyword">int</span>)entry.getKey();</span><br><span class="line">            <span class="keyword">int</span> value = (<span class="keyword">int</span>)entry.getValue();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(value == maxV) deque.addLast(key);</span><br><span class="line">            <span class="keyword">if</span>(value &gt; maxV)&#123;</span><br><span class="line">                <span class="keyword">while</span>(!deque.isEmpty())&#123;</span><br><span class="line">                    deque.removeLast();</span><br><span class="line">                &#125;</span><br><span class="line">                deque.addLast(key);</span><br><span class="line">                maxV = value;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> size = deque.size();</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[size];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= size-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            res[i] = deque.removeFirst();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        dfs(root.left);</span><br><span class="line">        map.put(root.val, map.getOrDefault(root.val, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -222,61 +213,6 @@
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>栈</title>
-    <url>/2022/11/19/%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>栈</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>栈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度搜索</title>
-    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>DFS</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>DFS</tag>
       </tags>
   </entry>
   <entry>
@@ -796,8 +732,10 @@
 
 
 
-<p>Set entrySet(): 返回所有key-value对构成的Set集合</p>
+
+
 <p>方法一</p>
+<p>Set entrySet(): 返回所有key-value对构成的Set集合</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//遍历所有的key-value</span></span><br><span class="line"><span class="comment">//entrySet():</span></span><br><span class="line">Map.Entry entrySet = map.entrySet();</span><br><span class="line">Iterator iterator2 = entrySet.iterator();</span><br><span class="line"><span class="keyword">while</span> (iterator2.hasNext())&#123;</span><br><span class="line">    Map.Entry entry = (Map.Entry)iterator2.next();<span class="comment">//强转一下Map.Entry类型</span></span><br><span class="line">    System.out.println(entry.getKey() + <span class="string">&quot;---&gt;&quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>方法二</p>
@@ -1192,6 +1130,61 @@
       </categories>
       <tags>
         <tag>易点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>栈</title>
+    <url>/2022/11/19/%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>栈</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>栈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度搜索</title>
+    <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>DFS</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>DFS</tag>
       </tags>
   </entry>
 </search>
