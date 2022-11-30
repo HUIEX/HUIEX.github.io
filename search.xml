@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo</title>
     <url>/2022/01/23/Hexo/</url>
     <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
@@ -95,6 +71,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>二叉树</title>
     <url>/2022/11/18/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
     <content><![CDATA[<h1 id="深度"><a href="#深度" class="headerlink" title="深度"></a>深度</h1><h2 id="104-二叉树的最大深度"><a href="#104-二叉树的最大深度" class="headerlink" title="104. 二叉树的最大深度"></a>104. 二叉树的最大深度</h2><p><a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/">https://leetcode.cn/problems/maximum-depth-of-binary-tree/</a><br>求深度用前序遍历</p>
@@ -152,7 +152,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    TreeNode pre;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(!isValidBST(root.left)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre != <span class="keyword">null</span> &amp;&amp; root.val &lt;= pre.val)  <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        pre = root;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> isValidBST(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="530-二叉搜索树的最小绝对差"><a href="#530-二叉搜索树的最小绝对差" class="headerlink" title="530. 二叉搜索树的最小绝对差"></a>530. 二叉搜索树的最小绝对差</h2><p>和上一题一样，利用二叉搜索树的特性，中序遍历，使当前节点进去上个节点，比较差值，最小的就是答案。<br><code>minL</code>左子树最小差值<br><code>min</code> 当前节点和上个节点的差值  与minL 的 最小差值<br><code>minR</code>左子树最小差值</p>
+<h2 id="530-二叉搜索树的最小绝对差"><a href="#530-二叉搜索树的最小绝对差" class="headerlink" title="530. 二叉搜索树的最小绝对差"></a>530. 二叉搜索树的最小绝对差</h2><p><a href="https://leetcode.cn/problems/minimum-absolute-difference-in-bst/">https://leetcode.cn/problems/minimum-absolute-difference-in-bst/</a><br>和上一题一样，利用二叉搜索树的特性，中序遍历，使当前节点进去上个节点，比较差值，最小的就是答案。<br><code>minL</code>左子树最小差值<br><code>min</code> 当前节点和上个节点的差值  与minL 的 最小差值<br><code>minR</code>左子树最小差值</p>
 <p>return minR和min 中的最小值</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pre = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> min = Integer.MAX_VALUE;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getMinimumDifference</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> minL = getMinimumDifference(root.left);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre &gt; -<span class="number">1</span>) min = Math.min((root.val - pre), min);</span><br><span class="line">        pre = root.val;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> minR = getMinimumDifference(root.right);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Math.min(minR, min);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -172,14 +172,20 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Deque&lt;Integer&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;(); </span><br><span class="line">    <span class="keyword">int</span> maxC = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    TreeNode pre;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] findMode(TreeNode root) &#123;</span><br><span class="line">        dfs(root);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> size = deque.size();</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[size];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= size-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            res[i] = deque.removeFirst();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        dfs(root.left);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre == <span class="keyword">null</span> || root.val !=  pre.val) count = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> count++;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; maxC) &#123;</span><br><span class="line">            deque.clear();</span><br><span class="line">            deque.addLast(root.val);</span><br><span class="line">            maxC = count;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(count == maxC) &#123;</span><br><span class="line">            deque.addLast(root.val);</span><br><span class="line">        &#125;</span><br><span class="line">        pre = root;</span><br><span class="line"></span><br><span class="line">        dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<h1 id="公共祖先"><a href="#公共祖先" class="headerlink" title="公共祖先"></a>公共祖先</h1><h2 id="236-二叉树的最近公共祖先"><a href="#236-二叉树的最近公共祖先" class="headerlink" title="236. 二叉树的最近公共祖先"></a>236. 二叉树的最近公共祖先</h2><p><a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/">https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/</a></p>
-<p>需要重下往上找 使用后序遍历<br>如果当前节点的左右子树都找到了目标节点，说明该节点是<strong>最近</strong>公共祖先  返回该节点<br>如果当前节点就是目标节点，就返回该节点</p>
+<h2 id="701-二叉搜索树中的插入操作"><a href="#701-二叉搜索树中的插入操作" class="headerlink" title="701. 二叉搜索树中的插入操作"></a>701. 二叉搜索树中的插入操作</h2><p><a href="https://leetcode.cn/problems/insert-into-a-binary-search-tree/description/">https://leetcode.cn/problems/insert-into-a-binary-search-tree/description/</a></p>
+<p>如果val大于当前节点 就向右子树递归  反之 向左子树<br>如果当前节点为null  就创建节点  返回 将新节点连接到当前位置<br>最后返回根节点</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">insertIntoBST</span><span class="params">(TreeNode root, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">new</span> TreeNode(val);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(val &gt; root.val) root.right = insertIntoBST(root.right, val);</span><br><span class="line">        <span class="keyword">else</span> root.left = insertIntoBST(root.left, val);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="公共祖先"><a href="#公共祖先" class="headerlink" title="公共祖先"></a>公共祖先</h1><h2 id="236-二叉树的最近公共祖先"><a href="#236-二叉树的最近公共祖先" class="headerlink" title="236. 二叉树的最近公共祖先"></a>236. 二叉树的最近公共祖先</h2><p><a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/">https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/</a><br>需要重下往上找 使用后序遍历<br>如果当前节点的左右子树都找到了目标节点，说明该节点是<strong>最近</strong>公共祖先  返回该节点<br>如果当前节点就是目标节点，就返回该节点</p>
 <p>最后向上返回 左子树已找到的节点  或者 右子树已找到的节点 （如果都没有找到就返回null）</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode root, TreeNode p, TreeNode q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        TreeNode L = lowestCommonAncestor(root.left, p, q);</span><br><span class="line">        TreeNode R = lowestCommonAncestor(root.right, p, q);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>((L != <span class="keyword">null</span> &amp;&amp; R != <span class="keyword">null</span>) || root == p || root == q) <span class="keyword">return</span> root;</span><br><span class="line">        <span class="keyword">return</span> L == <span class="keyword">null</span> ? R : L;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-
-
+<h2 id="235-二叉搜索树的最近公共祖先"><a href="#235-二叉搜索树的最近公共祖先" class="headerlink" title="235. 二叉搜索树的最近公共祖先"></a>235. 二叉搜索树的最近公共祖先</h2><p><a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/description/">https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/description/</a><br>根据二叉搜索树的性质<br>如果该节点 大于p、q 那么该节点就是最近公共祖先<br>否则就 根据 当前节点的是否大于 小于p、q 进行向左、右子树的递归<br>如果当前节点 等于p 或者 q 就返回当前节点。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode root, TreeNode p, TreeNode q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> max = Math.max(p.val, q.val);</span><br><span class="line">        <span class="keyword">int</span> min = Math.min(p.val, q.val);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(root.val &gt; max) <span class="keyword">return</span> lowestCommonAncestor(root.left, p, q);</span><br><span class="line">        <span class="keyword">if</span>(root.val &lt; min) <span class="keyword">return</span> lowestCommonAncestor(root.right, p,q);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -207,43 +213,6 @@
       <tags>
         <tag>算法</tag>
         <tag>二叉树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>服务器更改ssh端口号</title>
-    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
-    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
-
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
-
-
-
-<p><strong>修改firewall配置</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重载防火墙</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重启ssh服务</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>在阿里云上添加安全组</strong></p>
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
-
-<p><strong>结束</strong></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1161,6 +1130,43 @@
       </categories>
       <tags>
         <tag>易点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>服务器更改ssh端口号</title>
+    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
+    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
+
+
+
+<p><strong>修改firewall配置</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重载防火墙</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启ssh服务</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>在阿里云上添加安全组</strong></p>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
+
+<p><strong>结束</strong></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
