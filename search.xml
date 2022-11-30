@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo</title>
     <url>/2022/01/23/Hexo/</url>
     <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
@@ -66,30 +90,6 @@
 
 <p>之后就用cnpm代替npm</p>
 ]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
@@ -163,8 +163,39 @@
 
 
 
-<h2 id="501-二叉搜索树中的众数"><a href="#501-二叉搜索树中的众数" class="headerlink" title="501. 二叉搜索树中的众数"></a>501. 二叉搜索树中的众数</h2><p>中序遍历， 将结果存入map中 key为节点值， value为出现次数<br>然后在遍历map 并进行比较处理<br>如果 value大于max 就将栈清空，并将该key存入栈中<br>如果一样，就将key加入栈中<br>最后将结果存入数组中</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    Deque&lt;Integer&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;(); </span><br><span class="line">    <span class="keyword">int</span> maxV = -<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] findMode(TreeNode root) &#123;</span><br><span class="line">        dfs(root);</span><br><span class="line"></span><br><span class="line">        Set entrySet = map.entrySet();</span><br><span class="line">        Iterator iterator =  entrySet.iterator();</span><br><span class="line">        <span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">            Map.Entry entry = (Map.Entry)iterator.next();</span><br><span class="line">            <span class="keyword">int</span> key = (<span class="keyword">int</span>)entry.getKey();</span><br><span class="line">            <span class="keyword">int</span> value = (<span class="keyword">int</span>)entry.getValue();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(value == maxV) deque.addLast(key);</span><br><span class="line">            <span class="keyword">if</span>(value &gt; maxV)&#123;</span><br><span class="line">                <span class="keyword">while</span>(!deque.isEmpty())&#123;</span><br><span class="line">                    deque.removeLast();</span><br><span class="line">                &#125;</span><br><span class="line">                deque.addLast(key);</span><br><span class="line">                maxV = value;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> size = deque.size();</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[size];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= size-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            res[i] = deque.removeFirst();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        dfs(root.left);</span><br><span class="line">        map.put(root.val, map.getOrDefault(root.val, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="501-二叉搜索树中的众数"><a href="#501-二叉搜索树中的众数" class="headerlink" title="501. 二叉搜索树中的众数"></a>501. 二叉搜索树中的众数</h2><p><strong>方法一： 暴力</strong></p>
+<p>中序遍历， 将结果存入map中 key为节点值， value为出现次数<br>然后在遍历map 并进行比较处理<br>如果 value大于max 就将栈清空，并将该key存入栈中<br>如果一样，就将key加入栈中<br>最后将结果存入数组中</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    Deque&lt;Integer&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;(); </span><br><span class="line">    <span class="keyword">int</span> maxV = -<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] findMode(TreeNode root) &#123;</span><br><span class="line">        dfs(root);</span><br><span class="line"></span><br><span class="line">        Set entrySet = map.entrySet();</span><br><span class="line">        Iterator iterator =  entrySet.iterator();</span><br><span class="line">        <span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">            Map.Entry entry = (Map.Entry)iterator.next();</span><br><span class="line">            <span class="keyword">int</span> key = (<span class="keyword">int</span>)entry.getKey();</span><br><span class="line">            <span class="keyword">int</span> value = (<span class="keyword">int</span>)entry.getValue();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(value == maxV) deque.addLast(key);</span><br><span class="line">            <span class="keyword">if</span>(value &gt; maxV)&#123;</span><br><span class="line">                deque.clear();</span><br><span class="line">                deque.addLast(key);</span><br><span class="line">                maxV = value;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> size = deque.size();</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[size];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= size-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            res[i] = deque.removeFirst();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        dfs(root.left);</span><br><span class="line">        map.put(root.val, map.getOrDefault(root.val, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>方法二： 利用搜索树特性</strong><br>直接在中序遍历中进行栈的操作，<br>先将遍历到的节点进行计数count<br>如果count大于maxC 就将栈清空  并将当前的节点值放入<br>如果等于就加入栈中，<br>如果小于 就跳过<br>最后当前节点设为上个节点</p>
+<p>最后将栈中的元素输出到数组中 返回 </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Deque&lt;Integer&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;(); </span><br><span class="line">    <span class="keyword">int</span> maxC = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    TreeNode pre;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] findMode(TreeNode root) &#123;</span><br><span class="line">        dfs(root);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> size = deque.size();</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[size];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= size-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            res[i] = deque.removeFirst();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        dfs(root.left);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(pre == <span class="keyword">null</span> || root.val !=  pre.val) count = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> count++;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; maxC) &#123;</span><br><span class="line">            deque.clear();</span><br><span class="line">            deque.addLast(root.val);</span><br><span class="line">            maxC = count;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(count == maxC) &#123;</span><br><span class="line">            deque.addLast(root.val);</span><br><span class="line">        &#125;</span><br><span class="line">        pre = root;</span><br><span class="line"></span><br><span class="line">        dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="公共祖先"><a href="#公共祖先" class="headerlink" title="公共祖先"></a>公共祖先</h1><h2 id="236-二叉树的最近公共祖先"><a href="#236-二叉树的最近公共祖先" class="headerlink" title="236. 二叉树的最近公共祖先"></a>236. 二叉树的最近公共祖先</h2><p><a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/">https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/</a></p>
+<p>需要重下往上找 使用后序遍历<br>如果当前节点的左右子树都找到了目标节点，说明该节点是<strong>最近</strong>公共祖先  返回该节点<br>如果当前节点就是目标节点，就返回该节点</p>
+<p>最后向上返回 左子树已找到的节点  或者 右子树已找到的节点 （如果都没有找到就返回null）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode root, TreeNode p, TreeNode q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        TreeNode L = lowestCommonAncestor(root.left, p, q);</span><br><span class="line">        TreeNode R = lowestCommonAncestor(root.right, p, q);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>((L != <span class="keyword">null</span> &amp;&amp; R != <span class="keyword">null</span>) || root == p || root == q) <span class="keyword">return</span> root;</span><br><span class="line">        <span class="keyword">return</span> L == <span class="keyword">null</span> ? R : L;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
