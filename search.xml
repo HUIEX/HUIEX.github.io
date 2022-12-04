@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo</title>
     <url>/2022/01/23/Hexo/</url>
     <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
@@ -214,30 +238,6 @@
       <tags>
         <tag>算法</tag>
         <tag>二叉树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1158,48 +1158,6 @@
       </tags>
   </entry>
   <entry>
-    <title>栈</title>
-    <url>/2022/11/19/%E6%A0%88/</url>
-    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>代码随想录</category>
-        <category>栈</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>栈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>服务器更改ssh端口号</title>
     <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
     <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
@@ -1247,6 +1205,48 @@
       <tags>
         <tag>算法</tag>
         <tag>DFS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>栈</title>
+    <url>/2022/11/19/%E6%A0%88/</url>
+    <content><![CDATA[<h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><h2 id="654-最大二叉树"><a href="#654-最大二叉树" class="headerlink" title="654.最大二叉树"></a>654.最大二叉树</h2><p><a href="https://leetcode.cn/problems/maximum-binary-tree/description/">https://leetcode.cn/problems/maximum-binary-tree/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">constructMaximumBinaryTree</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> n : nums) &#123;</span><br><span class="line">            TreeNode node = <span class="keyword">new</span> TreeNode(n);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 如果当前节点比栈顶节点（数组左边的数）大，那么就将栈顶的节点作为当前节点的左节点，并且将栈顶的节点移出，直到栈为空或者小于栈顶节点</span></span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty() &amp;&amp; n &gt; stack.peek().val) node.left = stack.pop();</span><br><span class="line">            <span class="comment">// 如果栈不为空，那么把当前节点归为栈顶元素的右子树（因为当前栈顶节点大于当前节点）</span></span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty()) stack.peek().right = node;</span><br><span class="line">            <span class="comment">// 最后将该节点放入栈顶</span></span><br><span class="line">            stack.push(node);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//栈底的元素就是最大的</span></span><br><span class="line">        <span class="keyword">return</span> stack.removeLast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>代码随想录</category>
+        <category>栈</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>栈</tag>
       </tags>
   </entry>
 </search>
