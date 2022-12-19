@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo</title>
     <url>/2022/01/23/Hexo/</url>
     <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
@@ -66,30 +90,6 @@
 
 <p>之后就用cnpm代替npm</p>
 ]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
@@ -963,11 +963,12 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">StringBuffer <span class="title">replace</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end, String str)</span>：把[start,end)位置替换为str</span></span><br></pre></td></tr></table></figure>
 
 <p>查</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str)</span></span></span><br><span class="line"><span class="function">String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> start,<span class="keyword">int</span> end)</span>:返回一个从start开始到end索引结束的左闭右开区间的子字符串</span></span><br><span class="line"><span class="function"><span class="keyword">char</span> <span class="title">charAt</span><span class="params">(<span class="keyword">int</span> n )</span>    </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setCharAt</span><span class="params">(<span class="keyword">int</span> n ,<span class="keyword">char</span> ch)</span>   </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str)</span>  str在字符串中的位置  没有返回-1</span></span><br><span class="line"><span class="function">String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> start,<span class="keyword">int</span> end)</span>:返回一个从start开始到end索引结束的左闭右开区间的子字符串</span></span><br><span class="line"><span class="function"><span class="keyword">char</span> <span class="title">charAt</span><span class="params">(<span class="keyword">int</span> n)</span>    查询目标索引下的的字符 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setCharAt</span><span class="params">(<span class="keyword">int</span> n ,<span class="keyword">char</span> ch)</span>   </span></span><br></pre></td></tr></table></figure>
 
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">StringBuffer <span class="title">reverse</span><span class="params">()</span> ：把当前字符序列逆转    </span></span><br></pre></td></tr></table></figure>
 
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">StringBuffer <span class="title">reverse</span><span class="params">()</span> ：把当前字符序列逆转                                               <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span>:长度</span></span><br></pre></td></tr></table></figure>
+<p>长度</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">length</span><span class="params">()</span>: 字符串长度</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">capacity</span><span class="params">()</span>：容量 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">1.StringBuffer的的初始大小为（16+初始字符串长度)</span></span><br><span class="line"><span class="function">2.一旦length大于capacity时，capacity便在前一次的基础上加1后倍增；</span></span><br><span class="line"><span class="function">    但有如下特殊情况：</span></span><br><span class="line"><span class="function">    <span class="comment">/** StringBuffer sb3=new StringBuffer(&quot;a&quot;);</span></span></span><br><span class="line"><span class="comment"><span class="function">        System.out.println(&quot;length=&quot;+sb3.length());//length=1</span></span></span><br><span class="line"><span class="comment"><span class="function">        System.out.println(&quot;capacity=&quot;+sb3.capacity());//capacity=17;</span></span></span><br><span class="line"><span class="comment"><span class="function"></span></span></span><br><span class="line"><span class="comment"><span class="function">        sb3.append(&quot;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&quot;);//length=19</span></span></span><br><span class="line"><span class="comment"><span class="function">        System.out.println(&quot;length=&quot;+sb3.length());//length=1+19=20;</span></span></span><br><span class="line"><span class="comment"><span class="function">        System.out.println(&quot;capacity=&quot;+sb3.capacity());//capacity=40;*/</span></span></span><br><span class="line"><span class="function">当length&gt;capacity时，capacity倍增仍达不到length的长度，这种现象称为跨阶，此时，capacity将根据length的实际大小设置长度，此后将按照直接倍增的方式增长（不将length+1)</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -1288,6 +1289,8 @@
 
 
 
+<h2 id="93-复原-IP-地址"><a href="#93-复原-IP-地址" class="headerlink" title="93. 复原 IP 地址"></a>93. 复原 IP 地址</h2><p><a href="https://leetcode.cn/problems/restore-ip-addresses/description/">https://leetcode.cn/problems/restore-ip-addresses/description/</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    List&lt;String&gt; res = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">restoreIpAddresses</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        dfs(s, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(String s, <span class="keyword">int</span> begin)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(begin == s.length() &amp;&amp; list.size() == <span class="number">4</span>) &#123;</span><br><span class="line">            </span><br><span class="line">            StringBuffer str = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">2</span>; i++) &#123;</span><br><span class="line">                System.out.println(list.get(i));</span><br><span class="line">                str.append(list.get(i)+<span class="string">&quot;.&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            str.append(list.get(<span class="number">3</span>));</span><br><span class="line">            res.add(<span class="keyword">new</span> String(str));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125; </span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = begin+<span class="number">1</span>; i &lt;= s.length() &amp;&amp; i &lt;= begin+<span class="number">3</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!isTrue(s.substring(begin, i))) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">            list.add(s.substring(begin, i));</span><br><span class="line">            dfs(s, i);</span><br><span class="line">            list.remove(list.size()-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isTrue</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(Integer.parseInt(str) &gt; <span class="number">255</span>  || (str.length() &gt; <span class="number">1</span> &amp;&amp; str.charAt(<span class="number">0</span>) == <span class="string">&#x27;0&#x27;</span>)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
