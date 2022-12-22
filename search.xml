@@ -99,6 +99,7 @@
     <url>/2022/12/04/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[]]></content>
       <categories>
+        <category>算法</category>
         <category>动态规划</category>
       </categories>
       <tags>
@@ -244,6 +245,7 @@
 
 ]]></content>
       <categories>
+        <category>算法</category>
         <category>二叉树</category>
       </categories>
       <tags>
@@ -256,6 +258,7 @@
     <url>/2022/12/22/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[]]></content>
       <categories>
+        <category>算法</category>
         <category>字符串</category>
       </categories>
       <tags>
@@ -1293,6 +1296,7 @@
 
 ]]></content>
       <categories>
+        <category>算法</category>
         <category>深度搜索</category>
       </categories>
       <tags>
@@ -1334,7 +1338,7 @@
 
 ]]></content>
       <categories>
-        <category>代码随想录</category>
+        <category>算法</category>
         <category>栈</category>
       </categories>
       <tags>
