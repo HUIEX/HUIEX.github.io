@@ -1322,6 +1322,19 @@
       </tags>
   </entry>
   <entry>
+    <title>链表</title>
+    <url>/2022/12/22/%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>算法</category>
+        <category>链表</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深度搜索</title>
     <url>/2022/11/19/%E6%B7%B1%E5%BA%A6%E6%90%9C%E7%B4%A2/</url>
     <content><![CDATA[<h1 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h1><h2 id="77-组合"><a href="#77-组合" class="headerlink" title="77. 组合"></a>77. 组合</h2><p><a href="https://leetcode.cn/problems/combinations/">https://leetcode.cn/problems/combinations/</a></p>
@@ -1402,19 +1415,6 @@
       <tags>
         <tag>算法</tag>
         <tag>深度搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>链表</title>
-    <url>/2022/12/22/%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>算法</category>
-        <category>链表</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>链表</tag>
       </tags>
   </entry>
 </search>
