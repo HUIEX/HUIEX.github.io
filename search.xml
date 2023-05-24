@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>123</title>
-    <url>/2023/05/23/123/</url>
-    <content><![CDATA[<p>123</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello Huiex</title>
-    <url>/2022/01/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo</title>
     <url>/2022/01/23/Hexo/</url>
     <content><![CDATA[<h1 id="Hexo-的创建和部署"><a href="#Hexo-的创建和部署" class="headerlink" title="Hexo 的创建和部署"></a>Hexo 的创建和部署</h1><p>Hexo 的创建和部署根据<a href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5&spm_id_from=pageDriver">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a>进行操作</p>
@@ -60,6 +30,8 @@
 <p>然后在 /Blog/source/_posts会产生同名的 .md 文件，再里面写博客即可，其中上面的<strong>Front-matter</strong> 可以根据 上面<strong>更换主题</strong> 的内容进行操作</p>
 <p>然后就 hexo三连</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
 
 
@@ -98,6 +70,83 @@
 ]]></content>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello Huiex</title>
+    <url>/2022/01/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node.js版本管理</title>
+    <url>/2023/05/24/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h1 id="node-js版本管理"><a href="#node-js版本管理" class="headerlink" title="node.js版本管理"></a>node.js版本管理</h1><p>不同项目需要不同版本的Node, 可以安装nvm工具 进行node版本的管理。</p>
+<h2 id="下载nvm"><a href="#下载nvm" class="headerlink" title="下载nvm"></a>下载nvm</h2><p>github下载地址：</p>
+<p><a href="https://github.com/coreybutler/nvm-windows/releases">Releases · coreybutler/nvm-windows (github.com)</a></p>
+<p>下载<code>nvm-setup.zip</code>，nvm 和 Node.js 的放置位置要选择不同的文件夹。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvm-noinstall.zip： 这个是绿色版本，不需要安装，但是使用之前需要配置环境变量；</span><br><span class="line">nvm-setup.zip：推荐下载这个包，无需配置就可以使用；</span><br><span class="line">Source code(zip)：zip 压缩的源码；</span><br><span class="line">Sourc code(tar.gz)：tar.gz 的源码，一般用于 *nix 系统。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h2><blockquote>
+<p>查看已安装的node版本</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvm list</span><br></pre></td></tr></table></figure>
+
+<img src="/2023/05/24/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/image-20230524103135350.png" alt="tu" style="zoom:50%;">
+
+
+
+<blockquote>
+<p>安装node最新版本</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvm install latest</span><br></pre></td></tr></table></figure>
+
+<img src="/2023/05/24/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/image-20230524105342641.png" alt="image" style="zoom:50%;">
+
+
+
+<blockquote>
+<p>安装的node指定版本</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvm install 16.14.2(要安装的版本号)</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>切换node版本</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvm use 16.14.2(要切换的版本号)</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>删除node版本</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nvm uninstall 16.14.2</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>node.js</tag>
       </tags>
   </entry>
   <entry>
@@ -247,6 +296,19 @@
       </tags>
   </entry>
   <entry>
+    <title>动态规划</title>
+    <url>/2022/12/04/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>算法</category>
+        <category>动态规划</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>动态规划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>哈希表</title>
     <url>/2022/12/22/%E5%93%88%E5%B8%8C%E8%A1%A8/</url>
     <content><![CDATA[<h2 id="242-有效的字母异位词"><a href="#242-有效的字母异位词" class="headerlink" title="242. 有效的字母异位词"></a>242. 有效的字母异位词</h2><p><a href="https://leetcode.cn/problems/valid-anagram/description/">https://leetcode.cn/problems/valid-anagram/description/</a></p>
@@ -300,56 +362,6 @@
       <tags>
         <tag>算法</tag>
         <tag>字符串</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态规划</title>
-    <url>/2022/12/04/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>算法</category>
-        <category>动态规划</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>动态规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>服务器更改ssh端口号</title>
-    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
-    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
-
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
-
-
-
-<p><strong>修改firewall配置</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重载防火墙</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>重启ssh服务</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>在阿里云上添加安全组</strong></p>
-<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
-
-<p><strong>结束</strong></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1283,6 +1295,43 @@
       </categories>
       <tags>
         <tag>易点</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>服务器更改ssh端口号</title>
+    <url>/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</url>
+    <content><![CDATA[<p><strong>修改/etc/ssh/sshd_config文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">进入ssh目录中</span></span><br><span class="line">cd /etc/ssh</span><br><span class="line"><span class="meta">#</span><span class="bash">打开sshd_config文件</span></span><br><span class="line">vi sshd_config</span><br><span class="line"><span class="meta">#</span><span class="bash">更改Port为指定端口号  保存返回</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/b.png" class>
+
+
+
+<p><strong>修改firewall配置</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=1833/tcp --permanent  #会返回success</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重载防火墙</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启ssh服务</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart sshd.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>在阿里云上添加安全组</strong></p>
+<img src="/2022/04/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/a.png" class>
+
+<p><strong>结束</strong></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
